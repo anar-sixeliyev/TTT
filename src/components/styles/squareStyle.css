@@ -1,0 +1,28 @@
+.square {
+    background: transparent;
+    border: 2px solid darkblue;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    outline: none;
+}
+
+.square:nth-child(3n) {
+    border-right: 0;
+}
+
+.square:nth-child(3n+1) {
+    border-left: 0;
+}
+
+.square:nth-child(1),
+.square:nth-child(2),
+.square:nth-child(3) {
+    border-top: 0;
+}
+
+.square:nth-child(7),
+.square:nth-child(8),
+.square:nth-child(9) {
+    border-bottom: 0;
+}
