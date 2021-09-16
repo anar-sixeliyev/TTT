@@ -1,0 +1,11 @@
+.msg-container {
+  background-color: rgba(40, 60, 40, 0.2);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.msg {
+  color: #ac3235;
+}

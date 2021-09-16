@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Board from "./Board";
 import { calculateWinner } from "../helpers";
+import message from './styles/message.css'
 const Game = () => {
   const [board, setBoard] = useState(
     Array.from({ length: 9 }, () => Array.from({ length: 9 }, () => null))
@@ -8,6 +9,7 @@ const Game = () => {
   const [littleBoard, setLittleBoard] = useState(Array(9).fill(null));
   const [xIsNext, setXisNext] = useState(true);
   var winner;
+  var result;
   const finalWinner = calculateWinner(littleBoard);
   const [next, setNext] = useState(null);
 
@@ -24,7 +26,7 @@ const Game = () => {
     winner = calculateWinner(board[row]);
 
     if (finalWinner || boardCopy[row][column] /* || boardLittleCopy[row] */) {
-      console.log(finalWinner);
+      console.log("end of the game, winner is ",finalWinner);
       return; //end the game, win
     }
     if (winner || boardLittleCopy[row]) {
@@ -49,44 +51,37 @@ const Game = () => {
     setNext(column);
     //console.log("next " + next);//go to boardCopy[column][col]
   };
-  //console.log(next);
 
-  //console.log(winner);
-  var result;
+
+
   if (finalWinner && finalWinner !== "draw") {
     result = (
-      <p className="alert alert-danger" role="alert">
+      <p className="msg" style={message}>
         {"finalWinner: " + finalWinner}
       </p>
     );
-  } else if (finalWinner && finalWinner !== "draw") {
+  } else if (finalWinner && finalWinner !== "draw" ) {
     result = (
-      <p className="alert alert-warning" role="alert">
+      <p className="msg" style={message}>
         {"Draw for Big game!!"}
       </p>
     );
   } else {
     result = (
-      <p className="alert alert-secondary" role="alert">
+      <p className="msg" style={message}>
         {"Next Player: " + (xIsNext ? "X" : "O")}
       </p>
     );
   }
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-around",
-        backgroundColor: "white",
-      }}
-    >
+    <div className="d-flex justify-content-around">
       <div>
-        <Board squares={board} onClick={handleClick} next={next} />
+        <Board squares={board} onClick={handleClick} next={next} style={{width:"50%"}} />
       </div>
+      {result}
       {/* <p>{finalWinner && finalWinner !== 'draw' ? 'finalWinner: ' + finalWinner : 'Next Player: ' + (xIsNext ? 'X' : 'O')}  </p> */}
-      <div /* className='mx-auto' */>
-        {message.length > 0 ? (
+      {/* {message.length > 0 ? (
           message.map((item, i) => {
             return (
               <p className="alert alert-primary" key={i} role="alert">
@@ -95,10 +90,10 @@ const Game = () => {
             );
           })
         ) : (
-          <></>
-        )}
-        {result}
-      </div>
+          <div className="msg-container" style={message} >
+            {result}
+          </div>
+        )} */}
     </div>
   );
 };
