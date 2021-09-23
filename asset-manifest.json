@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/TTT/static/css/main.d42206bf.chunk.css",
+    "main.js": "/TTT/static/js/main.0d914ec8.chunk.js",
+    "main.js.map": "/TTT/static/js/main.0d914ec8.chunk.js.map",
+    "runtime-main.js": "/TTT/static/js/runtime-main.84ad185f.js",
+    "runtime-main.js.map": "/TTT/static/js/runtime-main.84ad185f.js.map",
+    "static/css/2.ccab356c.chunk.css": "/TTT/static/css/2.ccab356c.chunk.css",
+    "static/js/2.d90b956f.chunk.js": "/TTT/static/js/2.d90b956f.chunk.js",
+    "static/js/2.d90b956f.chunk.js.map": "/TTT/static/js/2.d90b956f.chunk.js.map",
+    "index.html": "/TTT/index.html",
+    "precache-manifest.bae846178fc4a78f89ecee71cda8edc6.js": "/TTT/precache-manifest.bae846178fc4a78f89ecee71cda8edc6.js",
+    "service-worker.js": "/TTT/service-worker.js",
+    "static/css/2.ccab356c.chunk.css.map": "/TTT/static/css/2.ccab356c.chunk.css.map",
+    "static/css/main.d42206bf.chunk.css.map": "/TTT/static/css/main.d42206bf.chunk.css.map",
+    "static/js/2.d90b956f.chunk.js.LICENSE.txt": "/TTT/static/js/2.d90b956f.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/TTT/static/media/logo.e6b43377.png",
+    "static/media/index.css": "/TTT/static/media/paperVer1.a325bcd7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.84ad185f.js",
+    "static/css/2.ccab356c.chunk.css",
+    "static/js/2.d90b956f.chunk.js",
+    "static/css/main.d42206bf.chunk.css",
+    "static/js/main.0d914ec8.chunk.js"
+  ]
+}
