@@ -1,4 +1,4 @@
-website: https://anar-sixeliyev.github.io/TTT/
+Complex Tic-Tac-Toe game: https://anar-sixeliyev.github.io/TTT/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
