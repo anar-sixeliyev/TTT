@@ -1,5 +1,5 @@
 Complex Tic-Tac-Toe game: https://anar-sixeliyev.github.io/TTT/
-https://www.cs.huji.ac.il/w~ai/projects/2013/UlitmateTic-Tac-Toe/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
